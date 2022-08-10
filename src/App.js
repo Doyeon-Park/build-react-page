@@ -1,25 +1,32 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { components } from "react";
+import "./App.css";
+import { Profile } from "./components/Gallery";
+import Gallery from "./components/Gallery";
 
-function App() {
+export default function App() {
+  return <Gallery />;
+}
+
+/*export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Text</h1>
+      <section className="box">
+        <ul>Hello,World!</ul>
+      </section>
+
+      <section className="box">
+        <h1>Card within the card</h1>
+        <ul>This is a card within a card</ul>
+        <h2>Inner card</h2>
+        <ul>This is an inner card</ul>
+      </section>
+      <section className="box">
+        <h1>Including image</h1>
+      </section>
     </div>
   );
 }
 
 export default App;
+*/
