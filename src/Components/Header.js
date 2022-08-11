@@ -1,6 +1,6 @@
-import React from "react";
+import "./Header.css";
 
-function Singlebox() {
+function Header() {
   return (
     <div>
       <>
@@ -10,3 +10,5 @@ function Singlebox() {
     </div>
   );
 }
+
+export default Header;

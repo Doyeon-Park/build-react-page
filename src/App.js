@@ -1,12 +1,16 @@
 import React, { components } from "react";
-import "./App.css";
-import { Profile } from "./components/Gallery";
-import Gallery from "./components/Gallery";
+import "./Components/Header.css";
+import Gallery from "./Components/Gallery";
 
-export default function App() {
-  return <Gallery />;
+function App() {
+  return (
+    <div className="Center">
+      <Gallery />;
+    </div>
+  );
 }
 
+export default App;
 /*export default function App() {
   return (
     <div>
