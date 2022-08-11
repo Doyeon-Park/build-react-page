@@ -1,36 +1,33 @@
-import React, { components } from "react";
-import "./Components/Header.css";
-import Gallery from "./Components/Gallery";
+import React from "react";
 
 function App() {
   return (
-    <div className="Center">
-      <Gallery />;
-    </div>
-  );
-}
-
-export default App;
-/*export default function App() {
-  return (
-    <div>
+    <main style={style}>
       <h1>Text</h1>
-      <section className="box">
-        <ul>Hello,World!</ul>
-      </section>
-
-      <section className="box">
-        <h1>Card within the card</h1>
-        <ul>This is a card within a card</ul>
-        <h2>Inner card</h2>
-        <ul>This is an inner card</ul>
-      </section>
-      <section className="box">
+      <ul>Hello,world!</ul> <h1>Card within the card</h1>
+      <ul>This is a card within a card</ul>{" "}
+      <section style={sectionStyle}>
         <h1>Including image</h1>
+        <img
+          src="https://loremflickr.com/1234/2345/cats?56789"
+          width="500"
+          height="500"
+          alt="dynamically cat"
+        />
       </section>
-    </div>
+    </main>
   );
 }
 
 export default App;
-*/
+
+const style = {
+  margin: "0 auto",
+  maxWidth: "600px",
+};
+
+const sectionStyle = {
+  border: "2px solid gray",
+  padding: "10px",
+  boxShadow: "1px 2px 9px #a0a0a0",
+};
